@@ -4,7 +4,7 @@ import LikeSection from './LikeSection';
 import PostHeader from './PostHeader';
 
 const Post = props => {
-  // 🔥 Make sure the parent of Post is passing the right props!
+  // 🔥 Make sure the parent of Post [Brian, this is PostS] is passing the right props!
   const { post, likePost } = props;
 
   return (
@@ -29,3 +29,10 @@ const Post = props => {
 };
 
 export default Post;
+
+//large architecture
+//import
+//component {1. data 2. function 3. export JSX where you send prop with fake HTML}
+//sending props
+//taking in props + deconstructing them
+//If IT"S GREEN fake HTML <> That name needs to match what you import???
