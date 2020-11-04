@@ -4,7 +4,7 @@
   Look at each file to see what props need to be passed!
 */
 
-//// Import the state hook
+// Import the state hook
 //TODO: I am importing SO THAT I CAN 1. assign it to state as is the case with DummyData or 2. So that I can call it <green> from my JSX?
 import React, { useState } from 'react';
 // Import the Posts (plural!) 
@@ -14,7 +14,6 @@ import SearchBar from './components/SearchBar/SearchBar'
 // Import the dummyData
 import DummyData from './dummy-data.js' //* works.   console.log(dummyData)
 import Styles from './App.css'; //* added "Styles from"
-
 
 const App = () => { //*This is a component called App.
   //*App data/states
@@ -73,8 +72,8 @@ const App = () => { //*This is a component called App.
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
+      <SearchBar  />
       <Posts likePost={likePost} posts={posts}/> 
-      <SearchBar  /> props go in here
 
       {/* Check the implementation of each component, to see what props they require, if any! */}
 
@@ -88,3 +87,5 @@ export default App;
 
 //NOTES;
 //props take from parents and pass to kids
+//Use imports and data as locally as possible
+//  if local you know where it breaks.
