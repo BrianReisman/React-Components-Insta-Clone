@@ -64,20 +64,17 @@ const App = () => { //*This is a component called App.
 
 
 
-
-
-
-
 /* /* React
       <App name={'brian'} />
       Vanilla Js
       app('brian'); */
+// <SearchBar /> = calling
 
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-      <SearchBar /> props go in here
       <Posts likePost={likePost} posts={posts}/> 
+      <SearchBar  /> props go in here
 
       {/* Check the implementation of each component, to see what props they require, if any! */}
 
@@ -86,3 +83,8 @@ const App = () => { //*This is a component called App.
 };
 
 export default App;
+
+
+
+//NOTES;
+//props take from parents and pass to kids

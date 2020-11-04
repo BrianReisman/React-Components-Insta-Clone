@@ -33,6 +33,7 @@ export default Post;
 //large architecture
 //import
 //component {1. data 2. function 3. export JSX where you send prop with fake HTML}
+//functions/behavior that happens at this level.
 //sending props
 //taking in props + deconstructing them
 //If IT"S GREEN fake HTML <> That name needs to match what you import???
