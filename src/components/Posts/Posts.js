@@ -5,7 +5,7 @@ import "./Posts.css";
 const Posts = (props) => {
   // 🔥 Make sure the parent of Posts is passing the right props!
   const { likePost, posts } = props;
-  console.log(likePost); //have access to the function
+  // console.log(likePost); //have access to the function
   // console.log(posts); //have access to the data
 
   return (
